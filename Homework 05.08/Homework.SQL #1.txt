@@ -1,0 +1,41 @@
+SELECT
+	*
+FROM Employees
+WHERE employee_id BETWEEN '106' AND '115';	
+
+
+
+SELECT
+	*
+FROM Employees
+WHERE employee_id > '106' AND employee_id < '115';
+
+
+
+SELECT
+	*
+FROM Employees
+WHERE last_name LIKE 'K%';
+
+
+
+SELECT
+	*
+FROM Employees
+WHERE last_name LIKE '%n';
+
+
+
+SELECT
+	*
+FROM Employees
+WHERE job_id LIKE 'ST_MAN';
+
+
+
+SELECT
+	*
+FROM Employees
+WHERE manager_id IN ('100','103');
+
+
