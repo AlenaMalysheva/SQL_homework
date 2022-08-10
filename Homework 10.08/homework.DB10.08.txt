@@ -1,0 +1,45 @@
+1.Вывести все (только) имена клиентов.
+
+SELECT
+	CustomerName
+FROM [Customers]
+
+
+2.Вывести клиентов из Берлина, имена которых содержат слово "del".
+
+SELECT
+	*
+FROM [Customers]
+WHERE City = 'Berlin' AND CustomerName LIKE '%del%';
+
+
+3.Вывести контактные имена клиентов из Лондона.
+
+SELECT 
+	ContactName
+FROM [Customers]
+WHERE City = 'London';
+
+
+
+Создать таблицу с полями id,name,phone,country и заполнить значениями
+
+CREATE TABLE Users (
+  id		NUMERIC(4) UNIQUE,
+  name		VARCHAR(20) NOT NULL,
+  phone		VARCHAR(25),
+  country	VARCHAR(15)
+);
+
+
+INSERT INTO Users ( id,name,phone,country)
+VALUES (1,'Alona','+37657764457','Italy');
+
+INSERT INTO Users ( id,name,phone,country)
+VALUES (2,'Jack','+17656399725','USA');
+
+INSERT INTO Users ( id,name,phone,country)
+VALUES (3,'Emily','+33656391725','France');
+
+INSERT INTO Users ( id,name,phone,country)
+VALUES (4,'Ivan','+380677884444','Ukraine');
