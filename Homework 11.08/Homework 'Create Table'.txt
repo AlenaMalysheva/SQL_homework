@@ -1,0 +1,55 @@
+№1 Создать таблицу goods (товары) с полями:
+id (уникальное значение)
+title (cтрока максимум 30 символов)
+quantity (число больше 0)
+price (максимум 5-значное число)
+in_stock (символ (Y/N))
+
+CREATE TABLE goods (
+  id 		NUMERIC(4) UNIQUE,
+  title		VARCHAR(30) NOT NULL,
+  quantity	INT(5) check(quantity > 0),
+  price		NUMERIC(5),
+  in_stock	CHAR(1) check ( in_stock IN ('Y','N'))
+);
+
+№2 Fill the created table with data, at least 10 rows.
+
+INSERT INTO goods (id,title,quantity,price,in_stock)
+VALUES (1,'blue dress',5,680,'Y');
+
+INSERT INTO goods (id,title,quantity,price,in_stock)
+VALUES (2,'sundress',2,530,'Y');
+
+INSERT INTO goods (id,title,quantity,price,in_stock)
+VALUES (3,'skirt',2,499,'Y');
+
+INSERT INTO goods (id,title,quantity,price,in_stock)
+VALUES (4,'jeans',1,650,'Y');
+
+INSERT INTO goods (id,title,quantity,price,in_stock)
+VALUES (5,'pants',17,420,'Y');
+
+INSERT INTO goods (id,title,quantity,price,in_stock)
+VALUES (6,'shorts',12,310,'Y');
+
+INSERT INTO goods (id,title,quantity,price,in_stock)
+VALUES (7,'suit',10,999,'Y');
+
+INSERT INTO goods (id,title,quantity,price,in_stock)
+VALUES (8,'cap',15,150,'Y');
+
+INSERT INTO goods (id,title,quantity,price,in_stock)
+VALUES (9,'leggings',10,300,'Y');
+
+INSERT INTO goods (id,title,quantity,price,in_stock)
+VALUES (10,'jacket',5,1200,'Y');
+
+
+№3 Form a sample of the 3 most expensive products in the table
+
+SELECT 
+	* 
+FROM goods
+ORDER BY price DESC
+LIMIT 3;
