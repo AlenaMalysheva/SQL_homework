@@ -3,7 +3,7 @@ id (уникальное значение)
 title (cтрока максимум 30 символов)
 quantity (число больше 0)
 price (максимум 5-значное число)
-in_stock (символ (Y/N))
+in_stock (symbol (Y/N))
 
 CREATE TABLE goods (
   id 		NUMERIC(4) UNIQUE,
