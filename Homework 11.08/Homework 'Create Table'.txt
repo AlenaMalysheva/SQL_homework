@@ -1,8 +1,8 @@
-№1 Создать таблицу goods (товары) с полями:
-id (уникальное значение)
-title (cтрока максимум 30 символов)
-quantity (число больше 0)
-price (максимум 5-значное число)
+#1 Create a table goods (products) with fields:
+id (unique value)
+title (string max 30 characters)
+quantity (a number greater than 0)
+price (maximum 5 digits)
 in_stock (symbol (Y/N))
 
 CREATE TABLE goods (
