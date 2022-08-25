@@ -1,0 +1,27 @@
+CREATE TABLE employees2 (
+id	INTEGER UNIQUE NOT NULL,
+lastName	VARCHAR(128) NOT NULL,
+firstName	VARCHAR(128) NOT NULL,
+birthday	VARCHAR(15)
+);
+
+
+
+INSERT INTO employees2 (id,lastName,firstName,birthday) VALUES (1,'Alona','Malysheva','27-03-1994'),
+                                                                (2,'Ivan','Petrov','20-08-1974'),
+                                                                (3,'Igor','Ivanov','20-04-1984'),
+                                                                (4,'Maria','Sidorova','6-11-1980'),
+                                                                (5,'Maksim','Nesterenko','1-12-2000');
+
+
+
+SELECT COUNT (*) AS total 
+From Customers;  
+
+
+
+
+Agteggation - выполняет вычисление на наборе значений из данной таблицы и возвращает одиночное значение.
+К тому же мы никак не изменияем значения внутри самой таблицы,а только работаем с данными.
+
+А CRUD - это создание,чтение,изменения,удаление уже самих данных внутри таблицы.
