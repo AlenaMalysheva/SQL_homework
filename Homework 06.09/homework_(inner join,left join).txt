@@ -1,0 +1,19 @@
+Напишите запрос, который отобразит заказы клиентов 
+из Лондона или Франции.
+
+
+SELECT
+	t2.order_id
+FROM Customers t1
+INNER JOIN Orders t2
+WHERE City = 'London' OR country = 'France';
+
+
+SELECT 
+	t1.LastName,
+    t1.FirstName,
+	t2.OrderID
+from employees t1
+inner join orders t2
+on t1.EmployeeID = t2.employeeID
+where t1.LastName = 'King' AND t1.FirstName = 'Robert';
