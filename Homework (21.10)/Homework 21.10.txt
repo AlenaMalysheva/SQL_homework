@@ -1,0 +1,21 @@
+Task №1
+
+{     
+'order_id' : '63528'),     
+'first_name' : 'Alona',     
+'last_name' : 'Malysheva',     
+'product_title': 'laptop',     
+'model': 'Apple MacBook'     
+'color': 'grey',     
+'quantity': '1',     
+'is_confirmed': true },
+
+
+TASK №2
+
+1.customer registration - insertOne();
+2.set up products filter  - findMany();
+3.find product by model - findOne();
+4.add to cart - insertOne();
+5.delete from cart - deleteOne() or DeleteMany();
+6.edit customer information - updateOne();
